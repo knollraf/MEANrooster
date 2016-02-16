@@ -1,0 +1,246 @@
+/*-- RK ANFANG --*/
+body{
+    background-color: #FFFFFF;
+}
+/********************************************************************
+                              NAVBAR
+*********************************************************************/
+/*
+.baumlogo{
+    position: relative;
+    top: -10px;
+    display: none;
+}
+*/
+
+img.logo{
+    position: absolute;
+    top: -20px;
+}
+
+.navbar{
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+.nav {
+    padding-left: 220px;
+}
+
+.navbar-default{
+    color: white;
+    background-color: #4d8467;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: white;
+    background-color: #41735b;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
+    color: white;
+    background-color: #41735b;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #DADADA;
+    background-color: transparent;
+}
+
+.navbar-xs {
+    min-height:30px;
+}
+
+.navbar-xs .navbar-brand{
+    padding: 2px 8px;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+.navbar-xs .navbar-nav > li > a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    line-height: 30px;
+}
+
+
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #41735b;
+}
+
+/********************************************************************
+                              Search Bar
+*********************************************************************/
+header {
+    padding: 28px 0 20px;
+    border-bottom: 1px solid #d3d3d3;
+    background: rgba(0,0,0,0.08);
+    height: 120px;
+}
+
+#home-logo {
+    float: left;
+    margin-right: 7%;
+}
+
+#user-info {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+
+#home-search {
+    float: left;
+    position: relative;
+    width: 53%;
+    height: 47px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+    background: #fff;
+}
+
+#site-search-submit:hover {
+    width: 49px;
+    height: 46px;
+    top: -1px;
+    right: -1px;
+    border: 1px solid #41735b;
+    border-bottom: none;
+    background: #41735b;
+    background-size: 16px 16px;
+}
+
+#new-search {
+    position: relative;
+    top: 15px;
+    width: 55%;
+    height: 47px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+    background: #fff;
+    display: block;
+    box-sizing: border-box;
+    vertical-align: baseline;
+
+    overflow: visible;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#site-search-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    width: 46px;
+    border: 0;
+    text-indent: -9999em;
+    cursor: pointer;
+    outline: 0;
+    border-left: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0 2px 2px 0;
+    background: url("../images/lupe.png") no-repeat 50% 50%;
+}
+
+#site-search {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 90%;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-weight: 300;
+    font-size: 18px;
+    background: none;
+}
+
+.search{
+    height: 80px;
+    background-color: #d1d1d1;
+}
+
+ul.single{
+    list-style-type: none;
+}
+
+.single>li {
+    display: inline;
+}
+
+
+/********************************************************************
+                            Content Container
+*********************************************************************/
+/* Content Container Background-Color */
+.container-bg{
+    background-color: white;
+}
+
+/* Home */
+.jumbotron{
+    background-color: white;
+}
+
+
+
+
+
+
+/********************************************************************
+                Navbar smaller than 994px width screen
+*********************************************************************/
+
+
+@media (max-width: 991px) {
+
+    .nav{
+        padding-left: 120px;
+    }
+
+
+    #new-search {
+        position: relative;
+        top: 15px;
+    }
+
+
+
+}
+
+/********************************************************************
+                Navbar smaller than 767px width screen
+*********************************************************************/
+
+@media (max-width: 767px) {
+
+
+    #new-search {
+        position: relative;
+        top: 50px;
+    }
+
+    #new-search {
+        position: relative;
+        top: 15px;
+        width: 80%;
+
+    }
+
+} /* and of @media */
+
+/*-- RK ENDE --*/
+
+
+

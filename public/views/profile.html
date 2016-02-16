@@ -1,0 +1,40 @@
+<div class="jumbotron" ng-if="currentUser">
+    <div class="container">
+        <h3>Hello {{currentUser.name}} <i class="icon ion-happy-outline"></i> </h3>
+        <script>
+            _roost.push(['onload', function(data){
+                if ( data.promptable ) {
+                    var button = document.getElementById('roost-it');
+                    button.style.display = "none";
+                }
+            }]);
+        </script>
+    </div>
+</div>
+<div class="jumbotron" ng-if="!currentUser">
+    <div class="container">
+        <!--<h3>No User Found</h3>-->
+        <h3>Please
+            <a data-match-route="/login" href="/login">Login</a>
+            or
+            <a data-match-route="/signup" href="/signup">Sign up</a>
+        </h3>
+    </div>
+</div>
+<div class="container"  ng-if="currentUser">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="text-center">
+             <label><h3>Please choose your notifications</h3></label>
+            </div>
+        </div>
+        <div ng-repeat="notification in notifications">
+            <input type="checkbox" name="notification.name" ng-model="notification.value"></input>
+            {{notification.name}}</div>
+        <button class="btn btn-success" ng-click="saveChanges();">accept</button>
+        <button class="btn btn-warning"ng-click="callRoost()" id="roost-it">Roost It</button>
+        <br></br>
+        </div>
+    </div>
+</div>
+
